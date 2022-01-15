@@ -1,0 +1,73 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+body {
+  font-family: serif;
+
+}
+
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* min-height: 100vh; */
+  /* background-color: #EEEEEE; */
+}
+
+.title {
+  width:100%;
+  font-family: calibri;
+  color: white;
+  background-color: black;
+  font-size: 4.4vh;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.uploadA{
+  font-family: Helvetica;  
+  font-size: 5vh;
+  line-height: 1.1;
+  /* background: linear-gradient(45deg, #004de6, #80aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+}
+.btn{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.file-upload{
+  font-family: Helvetica;
+  border: 1px solid #ccc;
+    display: inline-block;
+    padding: 13px 32px;
+    cursor: pointer;
+}
+
+.card {
+  padding: 50px;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 8px;
+  text-align: center;
+  
+}

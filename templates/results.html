@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/results.css')}}" />
+  <link rel="shortcut icon" href="{{url_for('static',filename='styles/a.jpg')}}" type="image/x-icon">
+  <script type="text/javascript"> var genre = '{{pred}}'</script>
+  <title>Results</title>
+</head>
+
+<body>
+  <div class="container ">
+    <div class="title">
+      <h1> Results</h1>
+    </div>
+    <br><br>
+    <div class="card" id='abcd'>
+      <p id='tex'> </p>
+      <br>
+      <img src="{{url_for('static',filename='img/e.jpg')}}" id="imag" height="128px" width="128px">
+    </div>
+    <br>
+  </div>
+  <script type="text/javascript">
+    switch (genre) {
+      case 'blues':
+        document.getElementById('tex').innerHTML = "<h3>Blues is a music genre and musical form which was originated in the Deep South of the United States around the 1860s by African-Americans from roots in African-American work songs and spirituals. Blues incorporated spirituals, work songs, field hollers, shouts, chants, and rhymed simple narrative ballads.</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/Blues.jpg')}}";
+        break;
+      case 'classical':
+        document.getElementById('tex').innerHTML = "<h3>“Music written in a Western musical tradition, usually using an established form. Classical music is generally considered to be serious and to have a lasting value.”</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/classical.jpg')}}";
+        break;
+      case 'country':
+        document.getElementById('tex').innerHTML = "<h3>Country music is defined as “a style and genre of largely string-accompanied American popular music having roots in the folk music of the Southeast and cowboy music of the West, usually vocalized, generally simple in form and harmony, and typified by romantic or melancholy ballads accompanied by acoustic or electric guitar, banjo, violin, and harmonica.”<h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/country.png')}}";
+        break;
+      case 'disco':
+        document.getElementById('tex').innerHTML = "<h3>Disco was a genre of uptempo dance music that reached peak popularity during the 1970s.Early disco used horns, strings, flutes, and various other classical instruments to create a signature, funky sound. By the middle of the 1970s, creators started to turn toward electronic instruments and synthesizers to recreate the sounds of acoustic instruments.Some Famous Disco Musicians are: Donna Summer,The Bee Gees.<h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/disco.jpg')}}";
+        break;
+      case 'hiphop':
+        document.getElementById('tex').innerHTML = "<h3>Hip-hop is a genre of music most often characterized by a strong, rhythmic beat and a rapping vocal track.Some notable hiphop artists are Jay-Z,Drake,Kanye West.</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/hiphop.jpg')}}";
+        break;
+      case 'jazz':
+        document.getElementById('tex').innerHTML = "<h3>Jazz music is a broad style of music characterized by complex harmony, syncopated rhythms, and a heavy emphasis on improvisation.Some notable jazz artists are Miles Davis, Louis Armstrong and John Coltrane.</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/jazz.jpg')}}";
+        break;
+      case 'metal':
+        document.getElementById('tex').innerHTML = "<h3>Heavy metal is a subgenre of rock music defined by its use of volume, distortion, and aggressive attitude.Some subgenres of Metal are Deathcore, Glam Metal, Grunge and Speed Metal.</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/metal.jpg')}}";
+        break;
+      case 'pop':
+        document.getElementById('tex').innerHTML = "<h3>Pop music is the genre of popular music that produces the most hits.They have a good rhythm, a catchy melody, and are easy to remember and sing along to.Some famous pop artists are One Direction, Taylor Swift and Miley Cyrus.</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/pop.jpg')}}";
+        break;
+      case 'reggae':
+        document.getElementById('tex').innerHTML = "<h3>Reggae is a musical genre developed by Jamaicans of African ancestry in the late 1960s. The music is famed for the rhythmic patterns heard in percussion, bass lines, and rhythm guitar parts. The three principle reggae rhythms are: Stepper, Rocker, One Drop.</h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/reggae.jpg')}}";
+        break;
+      case 'rock':
+        document.getElementById('tex').innerHTML = "<h3>Rock is a popular music genre that combines elements of rhythm and blues (R&B), jazz, and country music with the addition of electric instruments. Originally associated with youth revolt and transgression, the genre is known for energetic performances, catchy melodies, and often insightful lyrics.<h3>";
+        document.getElementById("imag").src = "{{url_for('static',filename='img/rock.jpg')}}";
+        break;
+    }
+
+  </script>
+</body>
+
+</html>
