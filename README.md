@@ -6,3 +6,6 @@ In this project I have used the GTZAN dataset which consists of 1000 songs divid
 I have used the "librosa" library to extract features from the audio files.
 Then, to classify the data I have created a deep learning model using CNN.
 After training the model for approx. 600 epochs, the model has achieved the testing accuracy of 85%.
+<br />
+Screenshot: <br/><br/>
+![ss1](https://user-images.githubusercontent.com/66072201/150964269-de0a0124-15da-42ff-985a-eff627bfb8d2.jpg)
