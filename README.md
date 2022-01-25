@@ -9,3 +9,6 @@ After training the model for approx. 600 epochs, the model has achieved the test
 <br />
 Screenshot: <br/><br/>
 ![ss1](https://user-images.githubusercontent.com/66072201/150964269-de0a0124-15da-42ff-985a-eff627bfb8d2.jpg)
+<br/>
+
+![ss2](https://user-images.githubusercontent.com/66072201/150964634-7bab2581-e649-4bad-873d-bd5ec087931b.jpg)
